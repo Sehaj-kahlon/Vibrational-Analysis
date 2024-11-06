@@ -39,9 +39,11 @@ void loop() {
   Z_out = (Wire.read() | Wire.read() << 8); // Combine low and high byte for Z-axis
   Z_out = Z_out / 256; // Scale down the value
 
+ float time_sec = millis() / 1000.0;
+
   // Print accelerometer readings to the Serial Monitor
   Serial.print("Time_Stamp= "); 
-  Serial.print(millis());
+  Serial.print(time_sec, 3);
   Serial.print(" Xa= "); 
   Serial.print(X_out); 
   Serial.print("   Ya= "); 
