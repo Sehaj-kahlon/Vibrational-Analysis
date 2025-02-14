@@ -1,4 +1,0 @@
-  motorFFT_2020a.c
-rt_logging_mmi.c
-rtw_modelmap_utils.c
-
